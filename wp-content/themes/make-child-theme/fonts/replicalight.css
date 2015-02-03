@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ReplicaLightRegular';
+    src: url('replicalight.eot');
+    src: url('replicalight.eot') format('embedded-opentype'),
+         url('replicalight.woff2') format('woff2'),
+         url('replicalight.woff') format('woff'),
+         url('replicalight.ttf') format('truetype'),
+         url('replicalight.svg#ReplicaLightRegular') format('svg');
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ReplicaBoldRegular';
+    src: url('replicabold.eot');
+    src: url('replicabold.eot') format('embedded-opentype'),
+         url('replicabold.woff2') format('woff2'),
+         url('replicabold.woff') format('woff'),
+         url('replicabold.ttf') format('truetype'),
+         url('replicabold.svg#ReplicaBoldRegular') format('svg');
+}

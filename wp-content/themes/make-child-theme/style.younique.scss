@@ -1,0 +1,228 @@
+/* =============================
+
+== VARIABLES
+
+============================= */
+
+$mainColor: 		#E40321;
+$secondaryColor:	#cccccc;
+
+$titleFont:			'ReplicaBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$bodyFont:			'ReplicaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+/* =============================
+
+== snippets
+
+============================= */
+
+
+/* body copy -based on 6px baseline */
+.text-xxsmall 	{ font-size: 11px; line-height: 1.3em; }
+.text-xsmall 	{ font-size: 12px; line-height: 1.3em; }
+.text-small 	{ font-size: 14px; line-height: 1.4em; }
+.text-normal 	{ font-size: 16px; line-height: 1.6em; }
+.text-medium 	{ font-size: 20px; line-height: 1.6em; }
+.text-big 		{ font-size: 24px; line-height: 1.5em; }
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.text-highlight {color: #fff; background: $mainColor; display: inline; padding: 0; box-shadow: 10px 0 0 $mainColor, -10px 0 0 $mainColor; }
+
+
+.underline {border-bottom: 1px solid #ccc;}
+.underline:hover {border-bottom: 1px solid #666;}
+.uppercase {text-transform: uppercase;}
+.capitalize {text-transform: capitalize;}
+
+.left { float: left; }
+.right { float: right; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+.riga {width: auto;}
+.half {float: left; width: 50%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.clear { clear: both; }
+.relative { position: relative; }
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+/* =============================
+
+== Typography
+
+============================= */
+
+body { font-family: $bodyFont; font-size: 18px; line-height: 1.5em; color: #333; font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {font-family: $titleFont; font-weight: 500; line-height: 1.5em; text-rendering: optimizelegibility; clear: none; color: $mainColor;}
+
+h3.builder-post-list-section-title {color: $secondaryColor; text-align: center; border-bottom: 1px solid #efefef; margin-bottom: 32px; padding-bottom: 16px; }
+
+h3.builder-text-section-title, h1.section-title {text-align: center; color: #787878; font-size: 28px; margin-bottom: 3.8rem;}
+h3.builder-text-section-title strong {color: $mainColor;}
+
+a {color: $mainColor;
+	-webkit-transition: all .5s ease-in-out; 
+    		transition: all .5s ease-in-out;
+}
+a:hover { color: darken( $mainColor, 10% );  }
+a:focus, a:active, a:visited { color: $mainColor; }
+
+::selection {background: $mainColor; color: #fff;}
+::-moz-selection {background: $mainColor; color: #fff;}
+
+
+
+table, table td {border: none;}
+
+/* =============================
+
+== STRUCTURE 
+
+============================= */
+
+.container, .infinite-footer-container, .builder-section-gallery .builder-section-content, .builder-section-text .builder-section-content, .builder-section-blank .builder-section-content { max-width: 1280px; }
+
+
+.blog .site-content .container { padding-top: 40px; }
+/* =============================
+
+== HEADER 
+
+============================= */
+
+#site-header { box-shadow: 0px 2px 3px -3px rgba(0, 0, 0, 0.4); position: relative; }
+
+.header-bar {
+	text-align: right;
+	ul {margin: 1em 0;}
+	li {display: inline; list-style: none; font-size: 13px; font-weight: normal; margin-left: 1em;}
+	a {color: #ccc;}
+	a:hover {color: #fff;}
+}
+.site-branding {max-width: 30%;}
+
+.inlinesvg .site-branding .custom-logo {
+	    background-image: url('http://demo.stand-alone.it/thevalueweb/wp-content/themes/make-child-theme/images/Logo-url-claim.svg');
+	    max-width: 265px;
+	}
+
+
+.site-navigation {
+	max-width: 70%;
+	#menu-main {
+		margin-top: 4em;
+		li a { font-size: 16px; padding: 1.1rem 1.4rem;	}
+	}
+	#menu-main li a:hover {/*border-bottom: 6px solid lighten( $mainColor, 40% );*/ }
+}
+
+
+  
+ 
+//.site-navigation #menu-main .current_page_item > a, 
+//.site-navigation #menu-main .current-menu-item > a {border-bottom: 6px solid $mainColor;}
+
+
+.social-links .fa span {display: none;}
+
+
+.content-position-none .builder-banner-content  { max-width: 1280px; box-sizing: border-box; }
+
+
+/* =============================
+
+== General 
+
+============================= */
+
+.site-content { padding-top: 0; }
+
+h1.entry-title { font-size: 24px; }
+
+.entry-content {
+		h1, h2 { color: #333333; 
+			strong {color: $mainColor;}
+		}
+		
+}
+
+// .site-content { padding: 0 0 2.2rem 0; }
+
+// .builder-section-first .builder-banner-slide {margin-top: -2.2rem;}
+
+.builder-section {margin-bottom: 1px;}
+
+    
+    
+
+/* =============================
+
+== FOOTER 
+
+============================= */
+
+.ttfmp-widget-post-list .ttfmp-post-list-item-thumb {
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+
+.ttfmp-widget-post-list .ttfmp-post-list-item-title {
+    display: block;
+    line-height: 1.1em;
+    overflow: hidden;
+}
+
+/* =============================
+
+== Home 
+
+============================= */
+
+
+.home .builder-banner-content h1 {text-shadow: 1px 1px 1px #000, 2px 2px 5px #000, 3px 3px 20px #000;}
+.builder-banner-content {  }
+
+
+
+@media screen and (min-width: 1025px) {
+.content-position-left .builder-banner-content { 
+	float: none; right: auto; left: 50%; margin-left: -640px; width: 100%; max-width: 1280px; text-align: left; 
+	}
+.content-position-right .builder-banner-content { 
+	float: none; left: auto; right: 50%;margin-right: -640px; width: 100%; max-width: 1280px; text-align: right; 
+	}
+}
+@media screen and (max-width: 1024px) {
+
+
+.builder-banner-content .builder-banner-inner-content h1{ 
+	font-size: 32px;
+	}
+}
+@media screen and (max-width: 980px) {
+.builder-banner-content { padding: 0 2em; }
+.builder-banner-content .builder-banner-inner-content h1{ 
+	font-size: 26px;
+	}
+}
+@media screen and (max-width: 480px) {
+.builder-banner-content { padding: 0 1em; }
+.builder-banner-content .builder-banner-inner-content h1{ 
+	font-size: 24px;
+	}
+}
+
+.home #builder-section-1413809878337 {
+	h1, h2, h3 { font-family: $titleFont; color: #333; } 
+	.builder-text-column {/*border-bottom: 1px solid #666;*/ padding-bottom: 2em; font-size: 1.4em; line-height: 1.6em; }
+	
+}	
